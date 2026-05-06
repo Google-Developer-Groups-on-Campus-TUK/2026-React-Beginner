@@ -1,13 +1,3 @@
----
-name: Feature issue template
-about: 기능 이슈 템플릿
-title: ''
-labels: "\U0001F525 feature"
-assignees: seungwonHong
-type: Feature
-
----
-
 ## 📌 제목
 [Page] 기능 요약 (예: [Items Page] 상품 목록 불러오기 오류)
 
