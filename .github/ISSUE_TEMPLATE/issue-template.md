@@ -1,8 +1,8 @@
 ---
-name: Feature issue template
-about: 기능 이슈 템플릿
+name: issue template
+about: 이슈 템플릿
 title: ''
-labels: "\U0001F525 feature"
+labels: ''
 assignees: ''
 type: Feature
 
