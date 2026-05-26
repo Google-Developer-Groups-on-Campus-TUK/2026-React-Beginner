@@ -1,27 +1,61 @@
-import { useState } from 'react'
+import './App.css'
+
+import pandaImg from './assets/desktop_01.png'
+import pandaImg2 from './assets/desktop_05.png'
+
+import itemImg from './assets/desktop_02.png'
+import SearchImg from './assets/desktop_03.png'
+import registerImg from './assets/desktop_04.png'
+
+import lastImg from './assets/footer.png'
+import bannerImg from './assets/gnb.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <main className="flex min-h-screen items-center justify-center bg-slate-950 p-6 text-slate-100">
-      <section className="w-full max-w-md rounded-2xl border border-slate-700 bg-slate-900 p-8 shadow-lg">
-        <p className="text-sm font-medium text-cyan-400">React + Vite + Tailwind</p>
-        <h1 className="mt-2 text-3xl font-bold">React-Beginner</h1>
-        <p className="mt-3 text-slate-300">
-          프로젝트 생성 완료. Tailwind 클래스가 정상적으로 적용되고 있습니다.
-        </p>
-        <div className="mt-6">
-          <button
-            type="button"
-            className="rounded-lg bg-cyan-500 px-4 py-2 font-semibold text-slate-900 transition hover:bg-cyan-400"
-            onClick={() => setCount((prev) => prev + 1)}
-          >
-            Count: {count}
-          </button>
+    <div>
+
+      {/* 위 배너 */}
+      <div className="banner">
+        <img src={bannerImg}  />
+      </div>
+
+      {/* 메인 이미지 */}
+      <div className="main">
+        <img src={pandaImg} />
+      </div>
+
+      {/* 중간 카드 부분 */}
+      <div className="content">
+
+        <div className="left">
+
+          <div className="card">
+            <img src={itemImg} />
+          </div>
+
+          <div className="card">
+            <img src={registerImg}  />
+          </div>
+
         </div>
-      </section>
-    </main>
+
+        <div className="right">
+          <img src={SearchImg}  />
+        </div>
+
+      </div>
+
+      {/* 아래 배너 */}
+      <div className="middle">
+        <img src={pandaImg2}  />
+      </div>
+
+      {/* 마지막 푸터 */}
+      <div className="footer">
+        <img src={lastImg}  />
+      </div>
+
+    </div>
   )
 }
 
